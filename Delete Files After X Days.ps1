@@ -1,0 +1,1 @@
+﻿Get-ChildItem "C:\FMS_Feed\Archive" -Recurse -File | Where CreationTime -lt  (Get-Date).AddDays(-15)  | Remove-Item -Force
